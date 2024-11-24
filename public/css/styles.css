@@ -1,0 +1,146 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Wrapper Styles */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Quiz Container */
+.quiz-container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Quiz Head */
+.quiz-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quiz-title {
+    font-size: 1.8rem;
+    color: #333333;
+    margin: 0;
+}
+
+.quiz-score {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Quiz Body */
+.quiz-body {
+    margin-bottom: 20px;
+}
+
+.quiz-question {
+    font-size: 1.4rem;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.category {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #888888;
+    font-style: italic;
+}
+
+/* Quiz Options */
+.quiz-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quiz-options li {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quiz-options li:hover {
+    background-color: #e6f7ff;
+}
+
+.quiz-options .selected {
+    border-color: #4CAF50;
+    background-color: #dfffe2;
+    font-weight: bold;
+}
+
+/* Quiz Foot */
+.quiz-foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quiz-foot button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#check-answer {
+    background-color: #4CAF50;
+}
+
+#check-answer:hover {
+    background-color: #45a049;
+}
+
+#play-again {
+    background-color: #f44336;
+}
+
+#play-again:hover {
+    background-color: #d32f2f;
+}
+
+
+@media (max-width: 768px) {
+    .quiz-container {
+        padding: 15px;
+    }
+
+    .quiz-title {
+        font-size: 1.5rem;
+    }
+
+    .quiz-question {
+        font-size: 1.2rem;
+    }
+
+    .quiz-options li {
+        font-size: 0.9rem;
+    }
+
+    .quiz-foot button {
+        font-size: 0.9rem;
+    }
+}
