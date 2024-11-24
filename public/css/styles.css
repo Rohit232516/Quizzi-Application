@@ -6,6 +6,10 @@ body, html {
     font-family: 'Arial', sans-serif;
 }
 
+.home-link{
+    text-decoration: none;
+    color: white;
+}
 /* Wrapper Styles */
 .wrapper {
     display: flex;
@@ -84,10 +88,24 @@ body, html {
     background-color: #e6f7ff;
 }
 
+/* Selected Class */
 .quiz-options .selected {
+    border-color: #00008b; /* Dark Blue Border */
+    background-color: #dce6f8; /* Pale Blue Background */
+    font-weight: bold;
+}
+
+/* Verified Class for Correct Answer */
+.quiz-options .verified {
     border-color: #4CAF50;
     background-color: #dfffe2;
     font-weight: bold;
+}
+
+/* Wrong Class for Incorrect Answer */
+.quiz-options .wrong {
+    border-color: #ff0000; /* Red Border */
+    background-color: #ffe6e6; /* Pale Red Background */
 }
 
 /* Quiz Foot */
@@ -114,15 +132,15 @@ body, html {
     background-color: #45a049;
 }
 
-#play-again {
-    background-color: #f44336;
+#next-question {
+    background-color: #007bff;
 }
 
-#play-again:hover {
-    background-color: #d32f2f;
+#next-question:hover {
+    background-color: #0056b3;
 }
 
-
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
     .quiz-container {
         padding: 15px;
